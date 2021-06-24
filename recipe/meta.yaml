@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - apache-airflow >=2.0.0
+    - apache-airflow >=2.1.0
     - celery >=4.4.2,<4.5.0
     - flower >=0.7.3,<1.0
     - python >=3.6
