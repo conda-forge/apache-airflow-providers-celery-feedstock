@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - apache-airflow >=2.1.0
-    - celery >=5.1.2,<6.0
-    - flower >=1.0.0,<1.1
+    - celery >=5.2.3
+    - flower >=1.0.0
 
 test:
   imports:
