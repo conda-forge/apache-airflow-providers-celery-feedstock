@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-celery-{{ version }}.tar.gz
-  sha256: b9de35a66bf3a37b57eae55f2cb175bed3c321e5221a53d86976dcca9f9b8944
+  sha256: ede049eea8e7dc41a74569453d51f2a666841cdd90dfa0223e2f7c37401f65b1
 
 build:
   number: 0
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - apache-airflow >=2.1.0
-    - celery >=5.1.2,<6.0
-    - flower >=1.0.0,<1.1
+    - celery >=5.2.3
+    - flower >=1.0.0
 
 test:
   imports:
