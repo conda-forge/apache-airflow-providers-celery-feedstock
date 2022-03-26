@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - apache-airflow >=2.1.0
-    - celery >=5.1,==5.*,>=5.1.2
+    - celery >=5.1.2,<6
     - flower >=1.0.0
 
 test:
