@@ -10,9 +10,9 @@ source:
   sha256: 2771876f0c8b4fb41787cce8092d67cd40779ecb3418a2a418b515bfa3b26947
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - apache-airflow >=2.1.0
-    - celery >=5.2.3
+    - celery >=5.1,==5.*,>=5.1.2
     - flower >=1.0.0
 
 test:
@@ -36,9 +36,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Celery for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-celery package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
