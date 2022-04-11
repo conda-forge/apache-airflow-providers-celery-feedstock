@@ -41,7 +41,6 @@ about:
   license_file:
     - LICENSE
     - NOTICE
-  license_file:
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/index.html
   dev_url: https://github.com/apache/airflow/
