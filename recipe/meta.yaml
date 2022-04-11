@@ -21,8 +21,8 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
-    - celery >=5.1.2,<6
+    - apache-airflow >=2.2.0
+    - celery >=5.2.3,<6
     - flower >=1.0.0
 
 test:
@@ -38,7 +38,10 @@ about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-celery package
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
+  license_file:
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/index.html
   dev_url: https://github.com/apache/airflow/
