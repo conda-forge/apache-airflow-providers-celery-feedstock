@@ -28,7 +28,7 @@ requirements:
 test:
   imports:
     - airflow.providers.celery
-    - airflow.providers.celery.sensors
+    - airflow.providers.celery.executors
   commands:
     - pip check
   requires:
