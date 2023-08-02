@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-celery-{{ version }}.tar.gz
-  sha256: c8a350a69b554181228cff08c41bb81c713d4e2f9319a7ff4bdd33ea2a7ff881
+  sha256: ab2bb207d7638cc0d031fad499421e322e7ce3a9c570b0733e50a0ab6fc34175
 
 build:
   noarch: python
@@ -28,7 +28,8 @@ requirements:
 test:
   imports:
     - airflow.providers.celery
-    - airflow.providers.celery.sensors
+    # Not supported until Airflow 2.7.0
+    # - airflow.providers.celery.executors
   commands:
     - pip check
   requires:
