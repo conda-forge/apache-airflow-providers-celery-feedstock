@@ -28,7 +28,8 @@ requirements:
 test:
   imports:
     - airflow.providers.celery
-    - airflow.providers.celery.executors
+    # Not supported until Airflow 2.7.0
+    # - airflow.providers.celery.executors
   commands:
     - pip check
   requires:
