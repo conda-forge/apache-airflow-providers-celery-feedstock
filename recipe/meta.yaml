@@ -24,6 +24,7 @@ requirements:
     - apache-airflow >=2.4.0
     - celery >=5.2.3,<6
     - flower >=1.0.0
+    - google-re2 >=1.0
 
 test:
   imports:
