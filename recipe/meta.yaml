@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "3.3.4" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-celery-{{ version }}.tar.gz
-  sha256: 8d9b98feb4368255b7238272c83b565eb59d4838c5a627e74bd2fd453f2c1556
+  sha256: 00318482e49bc838552700eb79a129aed352399e0e4cab780125c53857190e82
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.4.0
+    - apache-airflow >=2.5.0
     - celery >=5.3.0,<6,!=5.3.3,!=5.3.2
     - flower >=1.0.0
     - google-re2 >=1.0
