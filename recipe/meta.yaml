@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - apache-airflow >=2.8.0
     - celery >=5.3.0,<6,!=5.3.3,!=5.3.2
     - flower >=1.0.0
