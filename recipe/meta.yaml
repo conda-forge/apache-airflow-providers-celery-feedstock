@@ -39,7 +39,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-celery for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/celery/LICENSE
+  license_file: src/airflow/providers/celery/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/index.html
   dev_url: https://github.com/apache/airflow/
