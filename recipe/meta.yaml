@@ -17,14 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.9.0
     - celery >=5.4.0,<6
     - flower >=1.0.0
-    - google-re2 >=1.0
 
 test:
   imports:
