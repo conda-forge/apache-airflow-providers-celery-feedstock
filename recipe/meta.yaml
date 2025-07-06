@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-celery" %}
 {% set version = "3.12.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
