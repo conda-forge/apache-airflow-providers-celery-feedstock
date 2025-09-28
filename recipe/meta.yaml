@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "3.12.3" %}
+{% set version = "3.12.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_celery-{{ version }}.tar.gz
-  sha256: b5da9521abdf62951b62ba40b7f5166a9ffbcf2192adf1b9e16c730cfc69056f
+  sha256: b59d52331d166cbb1efcfd04b39b8b0282b84b9a367301023456ed88ef28b595
 
 build:
   noarch: python
