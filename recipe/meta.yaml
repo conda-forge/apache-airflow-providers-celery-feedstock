@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "3.13.0" %}
+{% set version = "3.13.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_celery-{{ version }}.tar.gz
-  sha256: 96cf1ad2c255d03592062227873dc33983ca5ccfa9c4b1608612d138753dd8c8
+  sha256: c4a28abfa7597f67a28caf44393686f7dd9b074dc6973d095f0f821013f60c11
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - celery >=5.5.0,<6
