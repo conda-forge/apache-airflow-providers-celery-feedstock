@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-celery" %}
-{% set version = "3.13.0" %}
-{% set python_min = "3.10" %}
+{% set version = "3.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_celery-{{ version }}.tar.gz
-  sha256: 96cf1ad2c255d03592062227873dc33983ca5ccfa9c4b1608612d138753dd8c8
+  sha256: 669e56676b279b5a47d0aa6fc165ac5619e3ca2821659803f6c1d105231a52ec
 
 build:
   noarch: python
@@ -22,7 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.10.0
+    - apache-airflow >=2.11.0
+    - apache-airflow-providers-common-compat >=1.10.0
     - celery >=5.5.0,<6
     - flower >=1.0.0
 
@@ -39,7 +39,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-celery for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/celery/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-celery/stable/index.html
   dev_url: https://github.com/apache/airflow/
