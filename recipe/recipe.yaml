@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-celery
-  version: "3.14.1"
+  version: "3.15.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_celery-${{ version }}.tar.gz
-  sha256: 23243f5539034f127fc16933f862fe88def80347e2f91d54e3aa8b89bef7eef3
+  sha256: d18742095d8b9273f2f47dcf26d7e89ec155b124cda1410fa1c27041d0282a60
 
 build:
   noarch: python
