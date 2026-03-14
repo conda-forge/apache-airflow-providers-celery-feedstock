@@ -25,6 +25,8 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.13.0
     - celery >=5.5.0,<6
+    # start celery[redis]
+    # end celery[redis]
     - flower >=1.0.0
 
 tests:
