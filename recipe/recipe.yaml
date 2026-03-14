@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-celery
-  version: "3.17.0"
+  version: "3.17.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_celery-${{ version }}.tar.gz
-  sha256: 679cbf10ee60e86ec84f1c50eef201482fb55e2d3bf7ffba8145678f51fc2a87
+  sha256: f50d5d0970e21707f21b5962e1e09f944c6008eae9782a863fcb2665afe34b75
 
 build:
   noarch: python
@@ -25,6 +25,8 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.13.0
     - celery >=5.5.0,<6
+    # start celery[redis]
+    # end celery[redis]
     - flower >=1.0.0
 
 tests:
