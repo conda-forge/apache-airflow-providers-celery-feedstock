@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-celery
-  version: 3.20.0
+  version: "3.20.0"
 
 package:
   name: ${{ name|lower }}
@@ -25,7 +25,10 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.15.0
     - celery >=5.5.0,<6
+    # start celery[redis]
+    # end celery[redis]
     - flower >=1.0.0
+
 tests:
   - python:
       imports:
@@ -33,7 +36,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - '*'
+        - "*"
 
 about:
   homepage: https://github.com/apache/airflow/
